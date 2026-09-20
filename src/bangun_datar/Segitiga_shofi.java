@@ -82,7 +82,13 @@ private  double keliling;
     public void setKeliling(double keliling) {
         this.keliling = keliling;
     }
-        
-
-
+        public void tampilHasil(){
+           System.out.println("Alas : " + getAlas()); 
+        System.out.println("Tinggi : " + getTinggi());
+        System.out.println("Sisi A : " + getSisiA()); 
+        System.out.println("Sisi B : " + getSisiB());
+        System.out.println("Sisi C : " + getSisiC()); 
+        System.out.println("Luas : " + getLuas()); 
+        System.out.println("Keliling : " + getKeliling());
+        }
 }

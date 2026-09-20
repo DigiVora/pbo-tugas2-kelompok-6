@@ -54,13 +54,8 @@ public class belahketupat_aditya {
          return 4*sisi;
      }
     public void tampilHasil(){
-    //membuat objek belah ketupat
    
-    
-    //mengisi nilai menggunakan setter
-
     //menampilkan data
-    
     System.out.println("=== BELAH KETUPAT ===");
     System.out.println("sisi       : " + getSisi());
     System.out.println("Diagonal 1 : " + getDiagonal1());

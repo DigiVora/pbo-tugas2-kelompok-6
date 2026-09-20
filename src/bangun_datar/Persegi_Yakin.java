@@ -15,12 +15,12 @@ package bangun_datar;
  */
 public class Persegi_Yakin {
     
-    // 1. Atribut (Enkapsulasi)
+    // 1. Atribut
     private double sisi;
     private double luas;
     private double keliling;
 
-    // 2. Konstruktor Default
+    // 2. Konstruktor
     public Persegi_Yakin() {
         this.sisi = 0;
         this.luas = 0;
@@ -70,7 +70,7 @@ public class Persegi_Yakin {
         this.keliling = 4 * this.sisi;
     }
 
-    // 6. Metode Cetak Hasil ke Konsol (Void)
+    // 6. Output to Console
     public void tampilkanData() {
         System.out.println("=================================");
         System.out.println("          BANGUN PERSEGI         ");

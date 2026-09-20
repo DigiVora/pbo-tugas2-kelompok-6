@@ -9,6 +9,7 @@ package bangun_datar;
  * @author acer
  */
 public class persegiPanjang_Khabib {
+    //membuat atribut
     private double panjang;
     private double lebar;
     
@@ -24,7 +25,7 @@ public class persegiPanjang_Khabib {
         this.lebar = lebar;  
     }
      
-     //membuat getter
+     //membuat getter dan setter
     public double getPanjang() {
         return panjang;
     }
@@ -40,6 +41,7 @@ public class persegiPanjang_Khabib {
      public void setLebar(double lebar){
         this.lebar = lebar;
     }
+     //method untuk menghitung luas dan keliling
      public double hitungLuas(){
          return panjang*lebar;
      }

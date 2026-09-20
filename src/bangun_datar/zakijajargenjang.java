@@ -9,6 +9,7 @@ package bangun_datar;
  * @author zaki reza
  */
 public class zakijajargenjang {
+    
     private double alas;
  private double tinggi;
  private double sisimiring;
@@ -61,6 +62,14 @@ public class zakijajargenjang {
 
     public void setKeliling(double keliling) {
         this.keliling = keliling;
+    }
+    public void tampilHasil() {
+    System.out.println(getAlas());
+    System.out.println(getTinggi());
+    System.out.println(getSisimiring());
+    System.out.println(getLuas());
+    System.out.println(getKeliling());
+    
     }
 
 }

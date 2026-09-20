@@ -25,8 +25,6 @@ Project ini menggunakan lisensi MIT.
 
 ---
 
----
-
 ## 👥 Anggota Kelompok & Pembagian Tugas
 
 Setiap anggota mengimplementasikan satu class bangun datar lengkap dengan atribut, enkapsulasi (*getter & setter*), serta method perhitungan luas dan keliling:

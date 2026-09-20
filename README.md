@@ -32,8 +32,8 @@ Setiap anggota mengimplementasikan satu class bangun datar lengkap dengan atribu
 | No | Nama Anggota | Nama Branch | Class yang Dikerjakan | Atribut Utama |
 |:--:|:---|:---|:---|:---|
 | 1 | Achmad Khusnul Yakin | Persegi | `Persegi.java` | `sisi` |
-| 2 | Shofi Putri Febrianti | Segitiga | `PersegiPanjang.java` | `panjang`, `lebar` |
-| 3 | Khabib Mustofa | Persegi Panjang | `Segitiga.java` | `alas`, `tinggi`, `sisiA`, `sisiB`, `sisiC` |
+| 2 | Shofi Putri Febrianti | Segitiga | `Segitiga.java` | `panjang`, `lebar` |
+| 3 | Khabib Mustofa | Persegi Panjang | `PersegiPanjang.java` | `alas`, `tinggi`, `sisiA`, `sisiB`, `sisiC` |
 | 4 | Muhammad Audi Luqman Mahfudz | Lingkaran | `Lingkaran.java` | `jariJari` |
 | 5 | Zaki Reza Pahlevi | JajarGenjang | `JajarGenjang.java` | `alas`, `tinggi`, `sisiMiring` |
 | 6 | M. Aditya Tri Hadi Tama | BelahKetupat | `BelahKetupat.java` | `diagonal1`, `diagonal2`, `sisi` |

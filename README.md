@@ -70,8 +70,8 @@ src/
  └── bangun_datar/
       ├── Bangun_Datar.java                # Main class pemanggil semua objek
       ├── Persegi_Yakin.java             # Dikerjakan oleh Achmad Khusnul Yakin
-      ├── persegiPanjang_Khabib.java      # Dikerjakan oleh Shofi Putri Febrianti
-      ├── Segitiga_shofi.java            # Dikerjakan oleh Khabib Mustofa
+      ├── persegiPanjang_Khabib.java      # Dikerjakan oleh Khabib Mustofa
+      ├── Segitiga_shofi.java            # Dikerjakan oleh Shofi Putri Febrianti
       ├── Lingkaran_Audi.java           # Dikerjakan oleh Muhammad Audi Luqman Mahfudz
       ├── zakijajargenjang.java        # Dikerjakan oleh Zaki Reza Pahlevi
       └── belahketupat_aditya.java        # Dikerjakan oleh M. Aditya Tri Hadi Tama

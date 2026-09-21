@@ -17,6 +17,9 @@ public class Bangun_datar {
         // TODO code application logic here
         persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);
         bangun.tampilkanHasil();
+        
+        //Segitiga
+        Segitiga_shofi sgt1 = new Segitiga_shofi(10, 8, 10, 10, 12, 40, 32);
+        sgt1.tampilHasil();
     }
-    
 }

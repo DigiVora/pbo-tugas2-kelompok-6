@@ -31,12 +31,12 @@ Setiap anggota mengimplementasikan satu class bangun datar lengkap dengan atribu
 
 | No | Nama Anggota | Nama Branch | Class yang Dikerjakan | Atribut Utama |
 |:--:|:---|:---|:---|:---|
-| 1 | Achmad Khusnul Yakin | Persegi | `Persegi.java` | `sisi` |
-| 2 | Shofi Putri Febrianti | Segitiga | `Segitiga.java` | `panjang`, `lebar` |
-| 3 | Khabib Mustofa | Persegi Panjang | `PersegiPanjang.java` | `alas`, `tinggi`, `sisiA`, `sisiB`, `sisiC` |
-| 4 | Muhammad Audi Luqman Mahfudz | Lingkaran | `Lingkaran.java` | `jariJari` |
-| 5 | Zaki Reza Pahlevi | JajarGenjang | `JajarGenjang.java` | `alas`, `tinggi`, `sisiMiring` |
-| 6 | M. Aditya Tri Hadi Tama | BelahKetupat | `BelahKetupat.java` | `diagonal1`, `diagonal2`, `sisi` |
+| 1 | Achmad Khusnul Yakin | Persegi | `Persegi_Yakin.java` | `sisi` |
+| 2 | Shofi Putri Febrianti | Segitiga | `Segitiga_shofi.java` | `panjang`, `lebar` |
+| 3 | Khabib Mustofa | Persegi Panjang | `persegiPanjang_Khabib.java` | `alas`, `tinggi`, `sisiA`, `sisiB`, `sisiC` |
+| 4 | Muhammad Audi Luqman Mahfudz | Lingkaran | `Lingkaran_Audi.java` | `jariJari` |
+| 5 | Zaki Reza Pahlevi | JajarGenjang | `zakijajargenjang.java` | `alas`, `tinggi`, `sisiMiring` |
+| 6 | M. Aditya Tri Hadi Tama | BelahKetupat | `belahketupat_aditya.java` | `diagonal1`, `diagonal2`, `sisi` |
 
 ---
 
@@ -68,13 +68,13 @@ Setiap anggota mengimplementasikan satu class bangun datar lengkap dengan atribu
 ```text
 src/
  └── bangun_datar/
-      ├── Main.java                # Main class pemanggil semua objek
-      ├── Persegi.java             # Dikerjakan oleh Achmad Khusnul Yakin
-      ├── PersegiPanjang.java      # Dikerjakan oleh Shofi Putri Febrianti
-      ├── Segitiga.java            # Dikerjakan oleh Khabib Mustofa
-      ├── Lingkaran.java           # Dikerjakan oleh Muhammad Audi Luqman Mahfudz
-      ├── JajarGenjang.java        # Dikerjakan oleh Zaki Reza Pahlevi
-      └── BelahKetupat.java        # Dikerjakan oleh M. Aditya Tri Hadi Tama
+      ├── Bangun_Datar.java                # Main class pemanggil semua objek
+      ├── Persegi_Yakin.java             # Dikerjakan oleh Achmad Khusnul Yakin
+      ├── persegiPanjang_Khabib.java      # Dikerjakan oleh Shofi Putri Febrianti
+      ├── Segitiga_shofi.java            # Dikerjakan oleh Khabib Mustofa
+      ├── Lingkaran_Audi.java           # Dikerjakan oleh Muhammad Audi Luqman Mahfudz
+      ├── zakijajargenjang.java        # Dikerjakan oleh Zaki Reza Pahlevi
+      └── belahketupat_aditya.java        # Dikerjakan oleh M. Aditya Tri Hadi Tama
 ```
 
 ## ⚙️Cara Menjalankan Proyek

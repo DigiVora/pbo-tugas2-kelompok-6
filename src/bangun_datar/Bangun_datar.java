@@ -15,10 +15,17 @@ public class Bangun_datar {
      */
     public static void main(String[] args) {
         // TODO code application logic here
+        
+        // Persegi
+        double nilaiSisi = 8.0;
+        Persegi_Yakin persegi = new Persegi_Yakin(nilaiSisi);
+        persegi.tampilkanData();
+        
+        // Persegi Panjang
         persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);
         bangun.tampilkanHasil();
         
-        //Segitiga
+        // Segitiga
         Segitiga_shofi sgt1 = new Segitiga_shofi(10, 8, 10, 10, 12, 40, 32);
         sgt1.tampilHasil();
     }

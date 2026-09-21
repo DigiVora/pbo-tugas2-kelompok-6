@@ -15,7 +15,8 @@ public class Bangun_datar {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        
+        persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);
+        bangun.tampilkanHasil();
     }
     
 }

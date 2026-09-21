@@ -51,7 +51,7 @@ public class persegiPanjang_Khabib {
      
      //methiod untuk menampilkan hasil
      public void tampilkanHasil(){
-         System.out.println("-----HASIL PERHITUNGAN LUAS PERSEGI PANJANG-----");
+         System.out.println("-----HASIL PERHITUNGAN LUAS DAN KELILING PERSEGI PANJANG-----");
          System.out.println("Panjang : "+ panjang);
          System.out.println("Lebar : "+lebar);
          System.out.println("Luas : "+hitungLuas());

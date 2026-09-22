@@ -42,5 +42,9 @@ public class Bangun_datar {
        //Belah ketupat
         belahketupat_aditya belahket = new belahketupat_aditya(10, 12, 8);
         belahket.tampilHasil();
+        
+        //jajargenjang
+        zakijajargenjang jjr = new zakijajargenjang(10, 5, 8, 25, 41);
+        jjr.tampilHasil();
     }
 }

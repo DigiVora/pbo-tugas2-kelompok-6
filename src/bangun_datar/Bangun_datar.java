@@ -21,7 +21,7 @@ public class Bangun_datar {
             7,      // jari_jari
             14,     // diameter
             154,    // luas
-            43.96   // keliling
+            43.96   // keliling.
         );
         lingkaran.tampilHasil();
     

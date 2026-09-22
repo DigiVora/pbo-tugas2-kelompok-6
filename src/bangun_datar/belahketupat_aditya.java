@@ -56,14 +56,17 @@ public class belahketupat_aditya {
     public void tampilHasil(){
    
     //menampilkan data
-    System.out.println("=== BELAH KETUPAT ===");
-    System.out.println("sisi       : " + getSisi());
-    System.out.println("Diagonal 1 : " + getDiagonal1());
-    System.out.println("Diagonal 2 : " + getDiagonal2());
+      System.out.println("=================================");
+      System.out.println("          BANGUN BELAH KETUPAT   ");
+      System.out.println("=================================");
+      System.out.println("sisi       : " + getSisi());
+      System.out.println("Diagonal 1 : " + getDiagonal1());
+      System.out.println("Diagonal 2 : " + getDiagonal2());
     
     //menampilkan hasil perhitungan
      System.out.println("Luas       : " + hitungLuas());
      System.out.println("Keliing   : " + hitungKeliling());
+     System.out.println("=================================");
     }
 }
 

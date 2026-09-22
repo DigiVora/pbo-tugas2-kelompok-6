@@ -51,11 +51,13 @@ public class persegiPanjang_Khabib {
      
      //methiod untuk menampilkan hasil
      public void tampilkanHasil(){
-         System.out.println("-----HASIL PERHITUNGAN LUAS DAN KELILING PERSEGI PANJANG-----");
+         System.out.println("=================================");
+        System.out.println("      BANGUN PERSEGI PANJANG      ");
+        System.out.println("=================================");
          System.out.println("Panjang : "+ panjang);
          System.out.println("Lebar : "+lebar);
          System.out.println("Luas : "+hitungLuas());
          System.out.println("Keliling : "+hitungKeliling());
-         
+         System.out.println("=================================");
      }
 }

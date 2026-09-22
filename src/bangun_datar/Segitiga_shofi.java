@@ -83,6 +83,9 @@ private  double keliling;
         this.keliling = keliling;
     }
         public void tampilHasil(){
+        System.out.println("=================================");
+        System.out.println("          BANGUN SEGITIGA        ");
+        System.out.println("=================================");
         System.out.println("Alas : " + getAlas()); 
         System.out.println("Tinggi : " + getTinggi());
         System.out.println("Sisi A : " + getSisiA()); 
@@ -90,5 +93,8 @@ private  double keliling;
         System.out.println("Sisi C : " + getSisiC()); 
         System.out.println("Luas : " + getLuas()); 
         System.out.println("Keliling : " + getKeliling());
+        System.out.println("=================================");
+        
+       
         }
 }

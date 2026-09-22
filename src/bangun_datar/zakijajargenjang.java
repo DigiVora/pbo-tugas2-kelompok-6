@@ -64,12 +64,15 @@ public class zakijajargenjang {
         this.keliling = keliling;
     }
     public void tampilHasil() {
-        System.out.println("menampilkan luas jajar genjang");
+    System.out.println("=================================");
+    System.out.println("      BANGUN JAJAR GENJANG       ");
+    System.out.println("=================================");
     System.out.println("Alas :" +getAlas());
     System.out.println("Tinggi :" +getTinggi());
     System.out.println("Sisi Miring : "+getSisimiring());
     System.out.println("Luas : "+getLuas());
     System.out.println("Keliling : "+getKeliling());
+    System.out.println("=================================");
     
     }
 

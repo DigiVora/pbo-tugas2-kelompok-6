@@ -11,6 +11,10 @@ package bangun_datar;
 
 /**
  * Class Persegi_Yakin
+ * Nama : Achmad Khusnul Yakin
+ * Nim : 202557201001
+ * Prodi : Sistem Informasi
+ * Semester : 3
  * Tugas Kelompok 6 PBO - Bangun Datar
  */
 public class Persegi_Yakin {

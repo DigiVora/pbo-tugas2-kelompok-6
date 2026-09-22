@@ -38,5 +38,9 @@ public class Bangun_datar {
         // Segitiga
         Segitiga_shofi sgt1 = new Segitiga_shofi(10, 8, 10, 10, 12, 40, 32);
         sgt1.tampilHasil();
+        
+       //Belah ketupat
+        belahketupat_aditya belahket = new belahketupat_aditya(10, 12, 8);
+        belahket.tampilHasil();
     }
 }

@@ -54,11 +54,14 @@ private double keliling;
         }
 
         public void tampilHasil(){
-            System.out.println();
-    System.out.println("jari_jari : " + jari_jari);
-    System.out.println("Diameter  : " + diameter);
-    System.out.println("Luas      : " + luas);
-    System.out.println("Keliling  : " + keliling);
+        System.out.println("=================================");
+        System.out.println("          BANGUN LINGKARAN         ");
+        System.out.println("=================================");
+        System.out.println("jari_jari : " + jari_jari);
+        System.out.println("Diameter  : " + diameter);
+        System.out.println("Luas      : " + luas);
+        System.out.println("Keliling  : " + keliling);
+        System.out.println("=================================");
 }
         
 }

@@ -17,12 +17,7 @@ public class Bangun_datar {
         // TODO code application logic here
         
         // Lingkaran
-        Lingkaran_Audi lingkaran = new Lingkaran_Audi(
-            7,      // jari_jari
-            14,     // diameter
-            154,    // luas
-            43.96   // keliling
-        );
+        Lingkaran_Audi lingkaran = new Lingkaran_Audi(7);
 
         lingkaran.tampilHasil();
 

@@ -28,8 +28,17 @@ public class Bangun_datar {
 
         // Persegi
         double nilaiSisi = 8.0;
-        Persegi_Yakin persegi = new Persegi_Yakin(nilaiSisi);
-        persegi.tampilkanData();
+        Persegi_Yakin persegi = new Persegi_Yakin();
+        persegi.setSisi(nilaiSisi);
+        persegi.hitungLuas();
+        persegi.hitungKeliling();
+        System.out.println("=================================");
+        System.out.println("         BANGUN PERSEGI          ");
+        System.out.println("=================================");
+        System.out.println("Sisi     : " + persegi.getSisi());
+        System.out.println("Luas     : " + persegi.getLuas());
+        System.out.println("Keliling : " + persegi.getKeliling());
+        System.out.println("=================================");
         
         // Persegi Panjang
         persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);

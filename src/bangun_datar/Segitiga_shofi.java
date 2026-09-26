@@ -71,16 +71,16 @@ private  double keliling;
         return luas;
     }
 
-    public void setLuas(double luas) {
-        this.luas = luas;
+    public void setLuas() {
+       luas = 0.5 * sisiA * sisiB * sisiC;
     }
 
     public double getKeliling() {
         return keliling;
     }
 
-    public void setKeliling(double keliling) {
-        this.keliling = keliling;
+    public void setKeliling() {
+        keliling = sisiA + sisiB + sisiC;
     }
         public void tampilHasil(){
         System.out.println("=================================");

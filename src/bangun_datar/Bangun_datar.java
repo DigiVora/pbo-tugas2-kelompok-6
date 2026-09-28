@@ -39,9 +39,21 @@ public class Bangun_datar {
         persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);
         bangun.tampilkanHasil();
         
-        // Segitiga
-        Segitiga_shofi sgt1 = new Segitiga_shofi(10, 8, 10, 10, 12, 40, 32);
-        sgt1.tampilHasil();
+        // Segitiga 
+        Segitiga_shofi sgt = new Segitiga_shofi(10, 10, 20, 10, 10);
+        System.out.println("=================================");
+        System.out.println("      BANGUN SEGITIGA            ");
+        System.out.println("=================================");
+        System.out.println("Alas\t\t\t:" + sgt.getAlas());
+        System.out.println("Tinggi\t\t\t:" + sgt.getTinggi());
+        System.out.println("Sisi A\t\t\t:" + sgt.getSisiA());
+        System.out.println("Sisi B\t\t\t:" + sgt.getSisiB());
+        System.out.println("Sisi C\t\t\t:" + sgt.getSisiC());
+        System.out.println("Luas\t\t\t:" + sgt.getLuas());
+        System.out.println("Keliling\t\t:" + sgt.getKeliling());
+
+        System.out.println("");
+                
         
        //Belah ketupat
         belahketupat_aditya belahket = new belahketupat_aditya(10, 12, 8);

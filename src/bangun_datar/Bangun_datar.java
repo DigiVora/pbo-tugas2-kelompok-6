@@ -36,8 +36,22 @@ public class Bangun_datar {
         System.out.println("=================================");
         
         // Persegi Panjang
-        persegiPanjang_Khabib bangun = new persegiPanjang_Khabib(20,15);
-        bangun.tampilkanHasil();
+        persegiPanjang_Khabib bangun = new persegiPanjang_Khabib();
+
+        bangun.setPanjang(20);
+        bangun.setLebar(15);
+
+        bangun.hitungLuas();
+        bangun.hitungKeliling();
+
+        System.out.println("=================================");
+        System.out.println("      BANGUN PERSEGI PANJANG     ");
+        System.out.println("=================================");
+        System.out.println("Panjang  : " + bangun.getPanjang());
+        System.out.println("Lebar    : " + bangun.getLebar());
+        System.out.println("Luas     : " + bangun.getLuas());
+        System.out.println("Keliling : " + bangun.getKeliling());
+        System.out.println("=================================");
         
         // Segitiga 
         Segitiga_shofi sgt = new Segitiga_shofi(10, 10, 20, 10, 10);

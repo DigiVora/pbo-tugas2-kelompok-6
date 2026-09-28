@@ -12,6 +12,9 @@ public class persegiPanjang_Khabib {
     //membuat atribut
     private double panjang;
     private double lebar;
+    private double luas;
+    private double keliling;
+    
     
     //membuat konstruktor kosong
     public persegiPanjang_Khabib(){
@@ -20,10 +23,10 @@ public class persegiPanjang_Khabib {
     }
 
     //konstruktor parameter
-     public persegiPanjang_Khabib(double panjang , double lebar){
-        this.panjang = panjang;
-        this.lebar = lebar;  
-    }
+//     public persegiPanjang_Khabib(double panjang , double lebar){
+//        this.panjang = panjang;
+//        this.lebar = lebar;  
+//    }
      
      //membuat getter dan setter
     public double getPanjang() {
@@ -41,23 +44,22 @@ public class persegiPanjang_Khabib {
      public void setLebar(double lebar){
         this.lebar = lebar;
     }
+    
+      public double getLuas() {
+        return luas;
+    }
+
+    public double getKeliling() {
+        return keliling;
+    }
+     
      //method untuk menghitung luas dan keliling
-     public double hitungLuas(){
-         return panjang*lebar;
+     public void hitungLuas(){
+         luas = panjang*lebar;
      }
-     public double hitungKeliling(){
-         return 2*(panjang + lebar);
+     public void hitungKeliling(){
+         keliling =  2*(panjang + lebar);
      }
      
-     //methiod untuk menampilkan hasil
-     public void tampilkanHasil(){
-         System.out.println("=================================");
-        System.out.println("      BANGUN PERSEGI PANJANG      ");
-        System.out.println("=================================");
-         System.out.println("Panjang : "+ panjang);
-         System.out.println("Lebar : "+lebar);
-         System.out.println("Luas : "+hitungLuas());
-         System.out.println("Keliling : "+hitungKeliling());
-         System.out.println("=================================");
-     }
+     
 }

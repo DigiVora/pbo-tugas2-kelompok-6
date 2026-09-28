@@ -164,14 +164,20 @@ public class frameKhabib extends javax.swing.JFrame {
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
         double panjang = Double.parseDouble(tPanjang.getText());
-        double lebar = Double.parseDouble(tLebar.getText());
-        
-        persegiPanjang_Khabib pp = new persegiPanjang_Khabib(panjang , lebar);
-        
-        hasilPanjang.setText("Panjang : "+pp.getPanjang());
-        hasillebar.setText("Lebar  : "+pp.getLebar());
-        hasilLuas.setText("Luas : "+pp.hitungLuas());
-        hasilKeliling.setText("Keliling :"+pp.hitungKeliling());
+    double lebar = Double.parseDouble(tLebar.getText());
+
+    persegiPanjang_Khabib pp = new persegiPanjang_Khabib();
+
+    pp.setPanjang(panjang);
+    pp.setLebar(lebar);
+
+    pp.hitungLuas();
+    pp.hitungKeliling();
+
+    hasilPanjang.setText("Panjang : " + pp.getPanjang());
+    hasillebar.setText("Lebar : " + pp.getLebar());
+    hasilLuas.setText("Luas : " + pp.getLuas());
+    hasilKeliling.setText("Keliling : " + pp.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed
 
     private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed

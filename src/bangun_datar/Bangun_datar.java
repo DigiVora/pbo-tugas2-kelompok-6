@@ -17,10 +17,16 @@ public class Bangun_datar {
         // TODO code application logic here
         
         // Lingkaran
-        Lingkaran_Audi lingkaran = new Lingkaran_Audi(7);
 
-        lingkaran.tampilHasil();
-
+        Lingkaran_Audi lkr = new Lingkaran_Audi(7);
+        System.out.println("=================================");
+        System.out.println("          BANGUN LINGKARAN       ");
+        System.out.println("=================================");
+        System.out.println("jari_jari\t\t:" + lkr.getJari_jari());
+        System.out.println("Diameter\t\t:" + lkr.getDiameter());
+        System.out.println("Luas\t\t\t:" + lkr.getLuas());
+        System.out.println("Keliling\t\t:" + lkr.getKeliling());
+  
         // Persegi
         double nilaiSisi = 8.0;
         Persegi_Yakin persegi = new Persegi_Yakin();
@@ -69,9 +75,27 @@ public class Bangun_datar {
         System.out.println("");
                 
         
-       //Belah ketupat
-        belahketupat_aditya belahket = new belahketupat_aditya(10, 12, 8);
-        belahket.tampilHasil();
+       // Belah Ketupat
+        double sisiBelahKetupat = 10.0;
+        double d1 = 12.0;
+        double d2 = 16.0;
+
+        belahketupat_aditya belahKetupat = new belahketupat_aditya();
+        belahKetupat.setSisi(sisiBelahKetupat);
+        belahKetupat.setDiagonal1(d1);
+        belahKetupat.setDiagonal2(d2);
+        belahKetupat.hitungLuas();
+        belahKetupat.hitungKeliling();
+
+        System.out.println("=================================");
+        System.out.println("      BANGUN BELAH KETUPAT       ");
+        System.out.println("=================================");
+        System.out.println("Sisi       : " + belahKetupat.getSisi());
+        System.out.println("Diagonal 1 : " + belahKetupat.getDiagonal1());
+        System.out.println("Diagonal 2 : " + belahKetupat.getDiagonal2());
+        System.out.println("Luas       : " + belahKetupat.getLuas());
+        System.out.println("Keliling   : " + belahKetupat.getKeliling());
+        System.out.println("=================================");
         
         //jajargenjang
     zakijajargenjang jjr = new zakijajargenjang(3, 2, 3);

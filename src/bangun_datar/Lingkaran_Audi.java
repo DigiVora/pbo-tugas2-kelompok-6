@@ -11,21 +11,21 @@ package bangun_datar;
 public class Lingkaran_Audi {
     private double jari_jari;
     private double phi = 3.14;
-
+    
+    public Lingkaran_Audi(){
+        
+    }
     public Lingkaran_Audi(double jari_jari) {
         this.jari_jari = jari_jari;
     }
-
-    public double getJari_jari() {
-        return jari_jari;
+    
+    public Lingkaran_Audi(double jari_jari, double phi){
+        this.jari_jari = jari_jari;
+        this.phi = phi;
     }
 
     public void setJari_jari(double jari_jari) {
         this.jari_jari = jari_jari;
-    }
-
-    public double getPhi() {
-        return phi;
     }
 
     public void setPhi(double phi) {
@@ -44,15 +44,11 @@ public class Lingkaran_Audi {
         return 2 * phi * jari_jari;
     }
 
-    public void tampilHasil() {
-        System.out.println("=================================");
-        System.out.println("         BANGUN LINGKARAN        ");
-        System.out.println("=================================");
-        System.out.println("Jari-jari : " + jari_jari);
-        System.out.println("Phi       : " + phi);
-        System.out.println("Diameter  : " + getDiameter());
-        System.out.println("Luas      : " + getLuas());
-        System.out.println("Keliling  : " + getKeliling());
-        System.out.println("=================================");
+    public double getJari_jari() {
+        return jari_jari;
     }
+
+    
+
+    
 }

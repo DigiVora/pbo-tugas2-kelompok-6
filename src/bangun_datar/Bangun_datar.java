@@ -69,9 +69,27 @@ public class Bangun_datar {
         System.out.println("");
                 
         
-       //Belah ketupat
-        belahketupat_aditya belahket = new belahketupat_aditya(10, 12, 8);
-        belahket.tampilHasil();
+       // Belah Ketupat
+        double sisiBelahKetupat = 10.0;
+        double d1 = 12.0;
+        double d2 = 16.0;
+
+        belahketupat_aditya belahKetupat = new belahketupat_aditya();
+        belahKetupat.setSisi(sisiBelahKetupat);
+        belahKetupat.setDiagonal1(d1);
+        belahKetupat.setDiagonal2(d2);
+        belahKetupat.hitungLuas();
+        belahKetupat.hitungKeliling();
+
+        System.out.println("=================================");
+        System.out.println("      BANGUN BELAH KETUPAT       ");
+        System.out.println("=================================");
+        System.out.println("Sisi       : " + belahKetupat.getSisi());
+        System.out.println("Diagonal 1 : " + belahKetupat.getDiagonal1());
+        System.out.println("Diagonal 2 : " + belahKetupat.getDiagonal2());
+        System.out.println("Luas       : " + belahKetupat.getLuas());
+        System.out.println("Keliling   : " + belahKetupat.getKeliling());
+        System.out.println("=================================");
         
         //jajargenjang
         zakijajargenjang jjr = new zakijajargenjang(10, 5, 8, 25, 41);

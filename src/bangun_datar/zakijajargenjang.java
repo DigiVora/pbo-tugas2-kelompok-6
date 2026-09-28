@@ -16,12 +16,16 @@ public class zakijajargenjang {
  private double luas;
  private double keliling;
 
-    public zakijajargenjang(double alas, double tinggi, double sisimiring, double luas, double keliling) {
+    public zakijajargenjang() {
+           alas = 0.0;
+           tinggi = 0.0;
+           sisimiring = 0.0;
+    }
+ 
+    public zakijajargenjang(double alas, double tinggi, double sisimiring) {
         this.alas = alas;
         this.tinggi = tinggi;
         this.sisimiring = sisimiring;
-        this.luas = luas;
-        this.keliling = keliling;
     }
 
     public double getAlas() {
@@ -49,31 +53,12 @@ public class zakijajargenjang {
     }
 
     public double getLuas() {
+        luas = alas * tinggi;
         return luas;
     }
-
-    public void setLuas(double luas) {
-        this.luas = luas;
-    }
-
     public double getKeliling() {
+        keliling = 2 * (alas + sisimiring);
         return keliling;
     }
-
-    public void setKeliling(double keliling) {
-        this.keliling = keliling;
-    }
-    public void tampilHasil() {
-    System.out.println("=================================");
-    System.out.println("      BANGUN JAJAR GENJANG       ");
-    System.out.println("=================================");
-    System.out.println("Alas :" +getAlas());
-    System.out.println("Tinggi :" +getTinggi());
-    System.out.println("Sisi Miring : "+getSisimiring());
-    System.out.println("Luas : "+getLuas());
-    System.out.println("Keliling : "+getKeliling());
-    System.out.println("=================================");
     
-    }
-
 }

@@ -74,7 +74,17 @@ public class Bangun_datar {
         belahket.tampilHasil();
         
         //jajargenjang
-        zakijajargenjang jjr = new zakijajargenjang(10, 5, 8, 25, 41);
-        jjr.tampilHasil();
+    zakijajargenjang jjr = new zakijajargenjang(3, 2, 3);
+
+    System.out.println("=================================");
+    System.out.println("      BANGUN JAJAR GENJANG       ");
+    System.out.println("=================================");
+    System.out.println("Alas :" +jjr.getAlas());
+    System.out.println("Tinggi :" +jjr.getTinggi());
+    System.out.println("Sisi Miring : "+jjr.getSisimiring());
+    System.out.println("Luas : "+jjr.getLuas());
+    System.out.println("Keliling : "+jjr.getKeliling());
+    System.out.println("=================================");
+
     }
 }

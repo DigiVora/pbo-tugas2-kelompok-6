@@ -41,8 +41,6 @@ public class frameShofi1 extends javax.swing.JFrame {
         tTinggi = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        hasilPanjang = new javax.swing.JLabel();
-        hasillebar = new javax.swing.JLabel();
         hasilLuas = new javax.swing.JLabel();
         hasilKeliling = new javax.swing.JLabel();
         bHitung = new javax.swing.JButton();
@@ -52,14 +50,19 @@ public class frameShofi1 extends javax.swing.JFrame {
 
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Input", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
 
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel2.setText("Alas");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel3.setText("Tinggi");
 
+        jLabel4.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel4.setText("sisiA");
 
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel5.setText("sisiB");
 
+        jLabel6.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         jLabel6.setText("sisiC");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -89,7 +92,7 @@ public class frameShofi1 extends javax.swing.JFrame {
                         .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(73, 73, 73)
                         .addComponent(tsisiC, javax.swing.GroupLayout.PREFERRED_SIZE, 346, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(28, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -118,17 +121,16 @@ public class frameShofi1 extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Segitiga");
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
 
-        hasilPanjang.setText("Panjang :");
-
-        hasillebar.setText("Lebar :");
-
+        hasilLuas.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         hasilLuas.setText("Luas :");
 
+        hasilKeliling.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
         hasilKeliling.setText("Keliling :");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
@@ -138,24 +140,18 @@ public class frameShofi1 extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(hasilPanjang, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(hasillebar, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(hasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(19, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hasilPanjang, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(29, 29, 29)
-                .addComponent(hasillebar, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
+                .addGap(22, 22, 22)
                 .addComponent(hasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
+                .addGap(32, 32, 32)
                 .addComponent(hasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addContainerGap(111, Short.MAX_VALUE))
         );
 
         bHitung.setText("Hitung");
@@ -208,35 +204,24 @@ public class frameShofi1 extends javax.swing.JFrame {
         tsisiB.setText("");
         tsisiC.setText("");
 
-        hasilPanjang.setText("Alas :");
-        hasillebar.setText("Tinggi :");
         hasilLuas.setText("Luas :");
         hasilKeliling.setText("Keliling :");
+                            
     }//GEN-LAST:event_bResetActionPerformed
 
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
-        double alas = Double.parseDouble(tAlas.getText());
-        double tinggi = Double.parseDouble(tTinggi.getText());
-        double sisiA = Double.parseDouble(tsisiA.getText());
-        double sisiB = Double.parseDouble(tsisiB.getText());
-        double sisiC = Double.parseDouble(tsisiC.getText());
 
-        double luas = 0.5 * alas * tinggi;
-        double keliling = sisiA + sisiB + sisiC;
+        Segitiga_shofi sgt = new Segitiga_shofi();
 
-        hasilPanjang.setText("Alas : " + alas);
-        hasillebar.setText("Tinggi : " + tinggi);
-        hasilLuas.setText("Luas : " + luas);
-        hasilKeliling.setText("Keliling : " + keliling);
-//        double alas = Double.perseDouble(tAlas.getText());
-//        double tinggi = Double.perseDouble(tTinggi.getText());
-//        double sisiA = Double.perseDouble(tsisiA.getText());
-//        double sisiB = Double.perseDouble(tsisiB.getText());
-//        double sisiC = Double.perseDouble(tsisiC.getText());
-//        
-//        Segitiga_shofi sgt = new Segitiga_shofi(alas, tinggi, sisiA, sisiB, sisiC, alas, sisiC);
-//        hasil alas.setText("alas : ")
+        sgt.setAlas(Double.parseDouble(tAlas.getText()));
+        sgt.setTinggi(Double.parseDouble(tTinggi.getText()));
+        sgt.setSisiA(Double.parseDouble(tsisiA.getText()));
+        sgt.setSisiA(Double.parseDouble(tsisiB.getText()));
+        sgt.setSisiA(Double.parseDouble(tsisiC.getText()));
+ 
+         hasilLuas.setText("Luas : " + sgt.getLuas());
+         hasilKeliling.setText("Keliling : " + sgt.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed
 
     /**
@@ -269,8 +254,6 @@ public class frameShofi1 extends javax.swing.JFrame {
     private javax.swing.JButton bReset;
     private javax.swing.JLabel hasilKeliling;
     private javax.swing.JLabel hasilLuas;
-    private javax.swing.JLabel hasilPanjang;
-    private javax.swing.JLabel hasillebar;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

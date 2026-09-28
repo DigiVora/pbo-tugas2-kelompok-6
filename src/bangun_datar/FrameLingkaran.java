@@ -9,7 +9,7 @@ package bangun_datar;
  * @author acer
  */
 public class FrameLingkaran extends javax.swing.JFrame {
-    
+
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(FrameLingkaran.class.getName());
 
     /**
@@ -33,10 +33,8 @@ public class FrameLingkaran extends javax.swing.JFrame {
         tJariJari = new javax.swing.JTextField();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        HasilJarijari = new javax.swing.JLabel();
-        HasilDiameter = new javax.swing.JLabel();
-        HasilLuas = new javax.swing.JLabel();
-        HasilKeliling = new javax.swing.JLabel();
+        tLuas = new javax.swing.JLabel();
+        tKeliling = new javax.swing.JLabel();
         bHitung = new javax.swing.JButton();
         bReset = new javax.swing.JButton();
 
@@ -74,13 +72,9 @@ public class FrameLingkaran extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
 
-        HasilJarijari.setText("Jari-jari :");
+        tLuas.setText("Luas:");
 
-        HasilDiameter.setText("Diameter :");
-
-        HasilLuas.setText("Luas :");
-
-        HasilKeliling.setText("Keliling :");
+        tKeliling.setText("Keliling:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -89,24 +83,18 @@ public class FrameLingkaran extends javax.swing.JFrame {
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(HasilJarijari, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HasilDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(HasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(tKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 482, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(35, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(HasilJarijari, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(29, 29, 29)
-                .addComponent(HasilDiameter, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(38, 38, 38)
-                .addComponent(HasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(28, 28, 28)
-                .addComponent(HasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(32, Short.MAX_VALUE))
+                .addComponent(tKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(130, Short.MAX_VALUE))
         );
 
         bHitung.setFont(new java.awt.Font("ObelixPro", 0, 12)); // NOI18N
@@ -159,25 +147,19 @@ public class FrameLingkaran extends javax.swing.JFrame {
 
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
-            double jariJari = Double.parseDouble(tJariJari.getText());
-
-            Lingkaran_Audi lingkaran = new Lingkaran_Audi(jariJari);
-
-            HasilJarijari.setText("Jari-jari : " + lingkaran.getJari_jari());
-            HasilDiameter.setText("Diameter : " + lingkaran.getDiameter());
-            HasilLuas.setText("Luas : " + lingkaran.getLuas());
-            HasilKeliling.setText("Keliling : " + lingkaran.getKeliling());
+        double jari_jari = Double.parseDouble(tJariJari.getText());
+        Lingkaran_Audi lingkaran = new Lingkaran_Audi(jari_jari);
+        tLuas.setText(String.format("Luas : %.2f", lingkaran.getLuas()));
+        tKeliling.setText(String.format("Keliling : %.2f", lingkaran.getKeliling()));
     }//GEN-LAST:event_bHitungActionPerformed
 
     private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
         // TODO add your handling code here:
         tJariJari.setText("");
-        
-
-        HasilJarijari.setText("Jari-jari :");
-        HasilDiameter.setText("Diameter :");
-        HasilLuas.setText("Luas :");
-        HasilKeliling.setText("Keliling :");
+        tLuas.setText("Jari-jari :");
+        tKeliling.setText("Diameter :");
+        tLuas.setText("Luas :");
+        tKeliling.setText("Keliling :");
 
     }//GEN-LAST:event_bResetActionPerformed
 
@@ -207,10 +189,6 @@ public class FrameLingkaran extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel HasilDiameter;
-    private javax.swing.JLabel HasilJarijari;
-    private javax.swing.JLabel HasilKeliling;
-    private javax.swing.JLabel HasilLuas;
     private javax.swing.JButton bHitung;
     private javax.swing.JButton bReset;
     private javax.swing.JLabel jLabel1;
@@ -218,5 +196,7 @@ public class FrameLingkaran extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JTextField tJariJari;
+    private javax.swing.JLabel tKeliling;
+    private javax.swing.JLabel tLuas;
     // End of variables declaration//GEN-END:variables
 }

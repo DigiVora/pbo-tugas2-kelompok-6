@@ -17,10 +17,16 @@ public class Bangun_datar {
         // TODO code application logic here
         
         // Lingkaran
-        Lingkaran_Audi lingkaran = new Lingkaran_Audi(7);
 
-        lingkaran.tampilHasil();
-
+        Lingkaran_Audi lkr = new Lingkaran_Audi(7);
+        System.out.println("=================================");
+        System.out.println("          BANGUN LINGKARAN       ");
+        System.out.println("=================================");
+        System.out.println("jari_jari\t\t:" + lkr.getJari_jari());
+        System.out.println("Diameter\t\t:" + lkr.getDiameter());
+        System.out.println("Luas\t\t\t:" + lkr.getLuas());
+        System.out.println("Keliling\t\t:" + lkr.getKeliling());
+  
         // Persegi
         double nilaiSisi = 8.0;
         Persegi_Yakin persegi = new Persegi_Yakin(nilaiSisi);

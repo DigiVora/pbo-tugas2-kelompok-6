@@ -154,9 +154,11 @@ public class frameShofi1 extends javax.swing.JFrame {
                 .addContainerGap(111, Short.MAX_VALUE))
         );
 
+        bHitung.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         bHitung.setText("Hitung");
         bHitung.addActionListener(this::bHitungActionPerformed);
 
+        bReset.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -219,9 +221,8 @@ public class frameShofi1 extends javax.swing.JFrame {
         sgt.setSisiA(Double.parseDouble(tsisiA.getText()));
         sgt.setSisiA(Double.parseDouble(tsisiB.getText()));
         sgt.setSisiA(Double.parseDouble(tsisiC.getText()));
- 
-         hasilLuas.setText("Luas : " + sgt.getLuas());
-         hasilKeliling.setText("Keliling : " + sgt.getKeliling());
+        hasilLuas.setText("Luas : " + sgt.getLuas());
+        hasilKeliling.setText("Keliling : " + sgt.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed
 
     /**

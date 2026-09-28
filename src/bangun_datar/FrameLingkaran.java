@@ -66,7 +66,7 @@ public class FrameLingkaran extends javax.swing.JFrame {
                 .addContainerGap(78, Short.MAX_VALUE))
         );
 
-        jLabel1.setFont(new java.awt.Font("ObelixPro", 0, 12)); // NOI18N
+        jLabel1.setFont(new java.awt.Font("Times New Roman", 1, 24)); // NOI18N
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Lingkaran");
 
@@ -99,11 +99,11 @@ public class FrameLingkaran extends javax.swing.JFrame {
                 .addContainerGap(130, Short.MAX_VALUE))
         );
 
-        bHitung.setFont(new java.awt.Font("ObelixPro", 0, 12)); // NOI18N
+        bHitung.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         bHitung.setText("Hitung");
         bHitung.addActionListener(this::bHitungActionPerformed);
 
-        bReset.setFont(new java.awt.Font("ObelixPro", 0, 12)); // NOI18N
+        bReset.setFont(new java.awt.Font("Times New Roman", 1, 14)); // NOI18N
         bReset.setText("Reset");
         bReset.addActionListener(this::bResetActionPerformed);
 
@@ -139,7 +139,7 @@ public class FrameLingkaran extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(bHitung)
                     .addComponent(bReset))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 65, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 53, Short.MAX_VALUE)
                 .addComponent(jPanel2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(50, 50, 50))
         );

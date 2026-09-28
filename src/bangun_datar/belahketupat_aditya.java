@@ -9,64 +9,63 @@ package bangun_datar;
  * @author ThinkPad
  */
 public class belahketupat_aditya {
-//membuat atribut
+// 1. Atribut
     private double sisi;
     private double diagonal1;
     private double diagonal2;
+    private double luas;
+    private double keliling;
 
-     public belahketupat_aditya(double sisi, double diagonal1, double diagonal2) {
-        this.sisi = sisi;
-        this.diagonal1 = diagonal1;
-        this.diagonal2 = diagonal2;
-    }
-     // membuat setter
-    public void setSisi(double sisi) {
-        this.sisi = sisi;
-    }
-
-    public void setDiagonal1(double diagonal1) {
-        this.diagonal1 = diagonal1;
+    // 2. Satu Konstruktor (Konstruktor Kosong)
+    public belahketupat_aditya() {
+        this.sisi = 0;
+        this.diagonal1 = 0;
+        this.diagonal2 = 0;
+        this.luas = 0;
+        this.keliling = 0;
     }
 
-    public void setDiagonal2(double diagonal2) {
-        this.diagonal2 = diagonal2;
-    }
-    
-  
-//membuat getter
+    // 3. Getter & Setter Atribut Input
     public double getSisi() {
         return sisi;
+    }
+
+    public void setSisi(double sisi) {
+        this.sisi = sisi;
     }
 
     public double getDiagonal1() {
         return diagonal1;
     }
 
+    public void setDiagonal1(double diagonal1) {
+        this.diagonal1 = diagonal1;
+    }
+
     public double getDiagonal2() {
         return diagonal2;
     }
 
-     public double hitungLuas() {
-        return (diagonal1 * diagonal2) ;
+    public void setDiagonal2(double diagonal2) {
+        this.diagonal2 = diagonal2;
     }
-     
-     public double hitungKeliling(){
-         return 4*sisi;
-     }
-    public void tampilHasil(){
-   
-    //menampilkan data
-      System.out.println("=================================");
-      System.out.println("          BANGUN BELAH KETUPAT   ");
-      System.out.println("=================================");
-      System.out.println("sisi       : " + getSisi());
-      System.out.println("Diagonal 1 : " + getDiagonal1());
-      System.out.println("Diagonal 2 : " + getDiagonal2());
-    
-    //menampilkan hasil perhitungan
-     System.out.println("Luas       : " + hitungLuas());
-     System.out.println("Keliing   : " + hitungKeliling());
-     System.out.println("=================================");
+
+    // 4. Method Perhitungan
+    public void hitungLuas() {
+        this.luas = 0.5 * this.diagonal1 * this.diagonal2;
+    }
+
+    public void hitungKeliling() {
+        this.keliling = 4 * this.sisi;
+    }
+
+    // 5. Getter Hasil Luas dan Keliling
+    public double getLuas() {
+        return luas;
+    }
+
+    public double getKeliling() {
+        return keliling;
     }
 }
 

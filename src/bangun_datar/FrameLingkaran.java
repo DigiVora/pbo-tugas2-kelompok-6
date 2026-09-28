@@ -72,8 +72,10 @@ public class FrameLingkaran extends javax.swing.JFrame {
 
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
 
+        tLuas.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         tLuas.setText("Luas:");
 
+        tKeliling.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
         tKeliling.setText("Keliling:");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);

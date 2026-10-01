@@ -48,7 +48,7 @@ public class frameKhabib extends javax.swing.JFrame {
 
         jLabel2.setText("Panjang");
 
-        jLabel3.setText("Lebar");
+        jLabel3.setText("Lebar :");
 
         javax.swing.GroupLayout pnlInputLayout = new javax.swing.GroupLayout(pnlInput);
         pnlInput.setLayout(pnlInputLayout);

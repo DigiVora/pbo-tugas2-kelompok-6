@@ -250,6 +250,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel9.setText("PERSEGI PANJANG");
         jLabel9.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel9.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
         panelPersegiPanjang.add(jLabel9, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelPersegiPanjang);
@@ -263,6 +268,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel11.setText("LINGKARAN");
         jLabel11.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel11.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+        });
         panelLingkaran.add(jLabel11, java.awt.BorderLayout.PAGE_END);
 
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -286,6 +296,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel14.setText("JAJAR GENJANG");
         jLabel14.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel14.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
         panelJajarGenjang.add(jLabel14, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelJajarGenjang);
@@ -374,6 +389,30 @@ public class frameDashboard extends javax.swing.JFrame {
         bk.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // TODO add your handling code here:
+        frameKhabib1 pp = new frameKhabib1();
+        pp.setLocationRelativeTo(null);
+        pp.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel9MouseClicked
+
+    private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
+        // TODO add your handling code here:
+        frameAudi1 lingkaran = new frameAudi1();
+        lingkaran.setLocationRelativeTo(null);
+        lingkaran.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel11MouseClicked
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+        framezaki1 jj = new framezaki1();
+        jj.setLocationRelativeTo(null);
+        jj.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
      * @param args the command line arguments

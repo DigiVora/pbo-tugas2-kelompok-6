@@ -206,6 +206,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/img/SEGITIGAA.png"))); // NOI18N
         jLabel7.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel7.setPreferredSize(new java.awt.Dimension(150, 20));
+        jLabel7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel7MouseClicked(evt);
+            }
+        });
         panelSegitiga.add(jLabel7, java.awt.BorderLayout.CENTER);
 
         jLabel8.setFont(new java.awt.Font("Segoe UI", 1, 28)); // NOI18N
@@ -213,6 +218,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel8.setText("SEGITIGA");
         jLabel8.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel8.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel8.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel8MouseClicked(evt);
+            }
+        });
         panelSegitiga.add(jLabel8, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelSegitiga);
@@ -344,6 +354,19 @@ public class frameDashboard extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
+        // TODO add your handling code here:
+        
+    }//GEN-LAST:event_jLabel7MouseClicked
+
+    private void jLabel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel8MouseClicked
+        // TODO add your handling code here:
+        frameShofi1 Sgt= new frameShofi1();
+        Sgt.setLocationRelativeTo(null);
+        Sgt.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel8MouseClicked
 
     /**
      * @param args the command line arguments

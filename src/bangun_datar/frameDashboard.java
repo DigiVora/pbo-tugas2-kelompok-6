@@ -59,18 +59,15 @@ public class frameDashboard extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
         panelUtama = new javax.swing.JPanel();
         panelHeader = new javax.swing.JPanel();
         panelLogo = new javax.swing.JPanel();
         jLabel4 = new javax.swing.JLabel();
-        panelTentang = new javax.swing.JPanel();
-        jButton2 = new javax.swing.JButton();
         panelJudul = new javax.swing.JPanel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jPanel2 = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
+        jPanel2 = new javax.swing.JPanel();
         panelIsi = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         panelCard = new javax.swing.JPanel();
@@ -95,8 +92,6 @@ public class frameDashboard extends javax.swing.JFrame {
         panelFooter = new javax.swing.JPanel();
         jButton1 = new javax.swing.JButton();
 
-        jLabel1.setText("jLabel1");
-
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Dashboard Bangun Datar");
 
@@ -116,16 +111,6 @@ public class frameDashboard extends javax.swing.JFrame {
 
         panelHeader.add(panelLogo, java.awt.BorderLayout.LINE_START);
 
-        panelTentang.setBackground(new java.awt.Color(209, 242, 255));
-        panelTentang.setLayout(new java.awt.FlowLayout(java.awt.FlowLayout.CENTER, 5, 15));
-
-        jButton2.setText("TENTANG");
-        jButton2.setPreferredSize(new java.awt.Dimension(100, 35));
-        jButton2.addActionListener(this::jButton2ActionPerformed);
-        panelTentang.add(jButton2);
-
-        panelHeader.add(panelTentang, java.awt.BorderLayout.LINE_END);
-
         panelJudul.setBackground(new java.awt.Color(209, 242, 255));
         panelJudul.setLayout(new java.awt.BorderLayout());
 
@@ -135,20 +120,28 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel2.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBox.icon[filled].pressedSelectedBackground"));
         jLabel2.setText("BERANDA ");
 
+        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
+        jLabel3.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBox.icon[filled].pressedSelectedBackground"));
+        jLabel3.setText("KALKULATOR BANGUN DATAR");
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 54, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(27, 27, 27)
                 .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 0, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel3)
+                .addContainerGap(16, Short.MAX_VALUE))
         );
 
         panelJudul.add(jPanel1, java.awt.BorderLayout.PAGE_START);
@@ -156,25 +149,15 @@ public class frameDashboard extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(209, 242, 255));
         jPanel2.setMinimumSize(new java.awt.Dimension(100, 60));
 
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 24)); // NOI18N
-        jLabel3.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBox.icon[filled].pressedSelectedBackground"));
-        jLabel3.setText("KALKULATOR BANGUN DATAR");
-
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap())
+            .addGap(0, 954, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel2Layout.createSequentialGroup()
-                .addGap(0, 0, 0)
-                .addComponent(jLabel3)
-                .addContainerGap(68, Short.MAX_VALUE))
+            .addGap(0, 118, Short.MAX_VALUE)
         );
 
         panelJudul.add(jPanel2, java.awt.BorderLayout.PAGE_END);
@@ -183,13 +166,15 @@ public class frameDashboard extends javax.swing.JFrame {
 
         panelUtama.add(panelHeader, java.awt.BorderLayout.PAGE_START);
 
-        panelIsi.setBackground(new java.awt.Color(227, 235, 242));
+        panelIsi.setBackground(new java.awt.Color(209, 242, 255));
         panelIsi.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, java.awt.Color.cyan));
         panelIsi.setPreferredSize(new java.awt.Dimension(900, 550));
         panelIsi.setLayout(new java.awt.BorderLayout(15, 15));
 
-        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 12)); // NOI18N
-        jLabel5.setText("PILIH BANGUN DATAR UNTUK DIHITUNG LUAS DAN KELILING NYA :");
+        jLabel5.setBackground(new java.awt.Color(209, 242, 255));
+        jLabel5.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("PILIH BANGUN DATAR UNTUK DIHITUNG LUAS DAN KELILING NYA");
         jLabel5.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel5.setIconTextGap(15);
         jLabel5.setPreferredSize(new java.awt.Dimension(386, 40));
@@ -242,6 +227,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel10.setText("PERSEGI");
         jLabel10.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel10.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel10.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel10MouseClicked(evt);
+            }
+        });
         panelPersegi.add(jLabel10, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelPersegi);
@@ -351,9 +341,13 @@ public class frameDashboard extends javax.swing.JFrame {
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
 
-    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+    private void jLabel10MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel10MouseClicked
         // TODO add your handling code here:
-    }//GEN-LAST:event_jButton2ActionPerformed
+        frameYakin persegi = new frameYakin();
+        persegi.setLocationRelativeTo(null);
+        persegi.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel10MouseClicked
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
         // TODO add your handling code here:
@@ -386,8 +380,6 @@ public class frameDashboard extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
@@ -418,7 +410,6 @@ public class frameDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelPersegi;
     private javax.swing.JPanel panelPersegiPanjang;
     private javax.swing.JPanel panelSegitiga;
-    private javax.swing.JPanel panelTentang;
     private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
 }

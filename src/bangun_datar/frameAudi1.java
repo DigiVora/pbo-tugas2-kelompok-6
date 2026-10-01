@@ -220,10 +220,10 @@ public class frameAudi1 extends javax.swing.JFrame {
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
         Lingkaran_Audi lkr = new Lingkaran_Audi();
-         double jari_jari = Double.parseDouble(tJariJari.getText());
-        Lingkaran_Audi lingkaran = new Lingkaran_Audi(jari_jari);
-        tLuas.setText(String.format("Luas : %.2f", lingkaran.getLuas()));
-        tKeliling.setText(String.format("Keliling : %.2f", lingkaran.getKeliling()));
+        
+        lkr.setJari_jari(Double.parseDouble(tJariJari.getText()));
+        tLuas.setText(String.format("Luas : %.2f", lkr.getLuas()));
+        tKeliling.setText(String.format("Keliling : %.2f", lkr.getKeliling()));
     }//GEN-LAST:event_bHitungActionPerformed
 
     /**

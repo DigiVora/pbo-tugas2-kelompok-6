@@ -52,11 +52,11 @@ public class belahketupat_aditya {
 
     // 4. Method Perhitungan
     public void hitungLuas() {
-        this.luas = 0.5 * this.diagonal1 * this.diagonal2;
+        luas = 0.5 * diagonal1 * diagonal2;
     }
 
     public void hitungKeliling() {
-        this.keliling = 4 * this.sisi;
+        this.keliling = 4 * sisi;
     }
 
     // 5. Getter Hasil Luas dan Keliling

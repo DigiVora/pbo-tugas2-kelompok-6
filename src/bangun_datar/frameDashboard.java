@@ -133,7 +133,6 @@ public class frameDashboard extends javax.swing.JFrame {
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 36)); // NOI18N
         jLabel2.setForeground(javax.swing.UIManager.getDefaults().getColor("CheckBox.icon[filled].pressedSelectedBackground"));
-        jLabel2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         jLabel2.setText("BERANDA ");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);

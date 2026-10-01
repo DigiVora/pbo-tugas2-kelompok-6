@@ -134,6 +134,11 @@ public class framezaki1 extends javax.swing.JFrame {
         );
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/img/icons8-home-40.png"))); // NOI18N
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
@@ -261,6 +266,14 @@ public class framezaki1 extends javax.swing.JFrame {
         hasilLuas.setText("Luas : " + jjr.getLuas());
         hasilKeliling.setText("Keliling : " + jjr.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed
+
+    private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
+        // TODO add your handling code here:
+        frameDashboard home = new frameDashboard();
+        home.setLocationRelativeTo(null);
+        home.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel1MouseClicked
 
     /**
      * @param args the command line arguments

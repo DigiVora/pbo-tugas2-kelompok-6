@@ -286,6 +286,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel14.setText("JAJAR GENJANG");
         jLabel14.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel14.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel14.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel14MouseClicked(evt);
+            }
+        });
         panelJajarGenjang.add(jLabel14, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelJajarGenjang);
@@ -344,6 +349,14 @@ public class frameDashboard extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jLabel14MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel14MouseClicked
+        // TODO add your handling code here:
+        framezaki1 jjr = new framezaki1();
+        jjr.setLocationRelativeTo(null);
+        jjr.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel14MouseClicked
 
     /**
      * @param args the command line arguments

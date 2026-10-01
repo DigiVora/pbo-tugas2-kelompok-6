@@ -105,6 +105,11 @@ public class frameYakin extends javax.swing.JFrame {
         btnReset.addActionListener(this::btnResetActionPerformed);
 
         btnHome.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/img/icons8-home-40.png"))); // NOI18N
+        btnHome.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                btnHomeMouseClicked(evt);
+            }
+        });
 
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
@@ -242,6 +247,14 @@ public class frameYakin extends javax.swing.JFrame {
         tKeliling.setText("");
         tSisi.requestFocus();
     }//GEN-LAST:event_btnResetActionPerformed
+
+    private void btnHomeMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_btnHomeMouseClicked
+        // TODO add your handling code here:
+        frameDashboard home = new frameDashboard();
+        home.setLocationRelativeTo(null);
+        home.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_btnHomeMouseClicked
 
     /**
      * @param args the command line arguments

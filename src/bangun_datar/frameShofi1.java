@@ -276,13 +276,11 @@ public class frameShofi1 extends javax.swing.JFrame {
         tsisiC.setText("");
 
         hasilLuas.setText("Luas :");
-        hasilKeliling.setText("Keliling :");
-                            
+        hasilKeliling.setText("Keliling :");                    
     }//GEN-LAST:event_bResetActionPerformed
 
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
-
         Segitiga_shofi sgt = new Segitiga_shofi();
 
         sgt.setAlas(Double.parseDouble(tAlas.getText()));

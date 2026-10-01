@@ -240,6 +240,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel9.setText("PERSEGI PANJANG");
         jLabel9.setPreferredSize(new java.awt.Dimension(150, 60));
         jLabel9.setVerticalTextPosition(javax.swing.SwingConstants.TOP);
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+        });
         panelPersegiPanjang.add(jLabel9, java.awt.BorderLayout.PAGE_END);
 
         panelCard.add(panelPersegiPanjang);
@@ -338,6 +343,14 @@ public class frameDashboard extends javax.swing.JFrame {
         persegi.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel10MouseClicked
+
+    private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
+        // TODO add your handling code here:
+       frameKhabib1 persegiPanjang = new frameKhabib1();
+        persegiPanjang.setLocationRelativeTo(null);
+        persegiPanjang.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel9MouseClicked
 
     /**
      * @param args the command line arguments

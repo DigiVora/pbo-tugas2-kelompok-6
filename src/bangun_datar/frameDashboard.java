@@ -298,6 +298,11 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel16.setText("BELAH KETUPAT");
         jLabel16.setVerticalAlignment(javax.swing.SwingConstants.TOP);
         jLabel16.setPreferredSize(new java.awt.Dimension(150, 60));
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
         panelBelahKetupat.add(jLabel16, java.awt.BorderLayout.PAGE_END);
 
         jLabel17.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -361,6 +366,14 @@ public class frameDashboard extends javax.swing.JFrame {
         Sgt.setVisible(true);
         this.dispose();
     }//GEN-LAST:event_jLabel8MouseClicked
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+        // TODO add your handling code here:
+        frameDitya1 bk = new frameDitya1();
+        bk.setLocationRelativeTo(null);
+        bk.setVisible(true);
+        this.dispose();
+    }//GEN-LAST:event_jLabel16MouseClicked
 
     /**
      * @param args the command line arguments

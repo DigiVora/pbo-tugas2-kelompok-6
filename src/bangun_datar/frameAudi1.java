@@ -8,14 +8,14 @@ package bangun_datar;
  *
  * @author acer
  */
-public class frameShofi1 extends javax.swing.JFrame {
+public class frameAudi1 extends javax.swing.JFrame {
     
-    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameShofi1.class.getName());
+    private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(frameAudi1.class.getName());
 
     /**
      * Creates new form frameKhabib
      */
-    public frameShofi1() {
+    public frameAudi1() {
         initComponents();
     }
 
@@ -35,88 +35,46 @@ public class frameShofi1 extends javax.swing.JFrame {
         jLabel10 = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         jLabel2 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
-        tAlas = new javax.swing.JTextField();
-        tsisiA = new javax.swing.JTextField();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        tsisiC = new javax.swing.JTextField();
-        tsisiB = new javax.swing.JTextField();
-        tTinggi = new javax.swing.JTextField();
+        tJariJari = new javax.swing.JTextField();
         bHitung = new javax.swing.JButton();
         bReset = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
-        hasilLuas = new javax.swing.JLabel();
-        hasilKeliling = new javax.swing.JLabel();
+        tLuas = new javax.swing.JLabel();
+        tKeliling = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel3.setBackground(new java.awt.Color(102, 204, 255));
 
-        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/img/ppppp.png"))); // NOI18N
+        jLabel7.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/img/Lingkaran-removebg-preview.png"))); // NOI18N
 
         jLabel8.setBackground(new java.awt.Color(255, 255, 255));
         jLabel8.setFont(new java.awt.Font("Bodoni MT Black", 1, 24)); // NOI18N
         jLabel8.setText("BANGUN DATAR");
 
         jLabel9.setFont(new java.awt.Font("Bodoni MT Black", 1, 18)); // NOI18N
-        jLabel9.setText("SEGITIGA");
+        jLabel9.setText("LINGKARAN");
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 2, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel10.setText("Menghitung Luas dan Keliling dari bangun datar Segitiga.");
+        jLabel10.setText("Menghitung Luas dan Keliling dari bangun datar Lingkaran.");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Input", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N
 
         jLabel2.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel2.setText("Alas ");
-
-        jLabel3.setFont(new java.awt.Font("Segoe UI Black", 1, 12)); // NOI18N
-        jLabel3.setText("Tinggi");
-
-        jLabel4.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
-        jLabel4.setText("sisiA");
-
-        jLabel5.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel5.setText("sisiB");
-
-        jLabel6.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        jLabel6.setText("sisiC");
+        jLabel2.setText("Jari-jari :");
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(12, 12, 12)
-                        .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tsisiC))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(13, 13, 13)
-                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(tsisiB))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(16, 16, 16))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(14, 14, 14)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 54, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(tTinggi, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 342, Short.MAX_VALUE)
-                            .addComponent(tsisiA, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(tAlas))))
+                .addGap(14, 14, 14)
+                .addComponent(jLabel2)
+                .addGap(24, 24, 24)
+                .addComponent(tJariJari, javax.swing.GroupLayout.PREFERRED_SIZE, 303, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
@@ -125,24 +83,8 @@ public class frameShofi1 extends javax.swing.JFrame {
                 .addContainerGap()
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel2)
-                    .addComponent(tAlas, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tTinggi, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel3))
-                .addGap(18, 18, 18)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
-                    .addComponent(tsisiA, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(32, 32, 32)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(tsisiB, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(jLabel5))
-                .addGap(23, 23, 23)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(tsisiC, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(33, Short.MAX_VALUE))
+                    .addComponent(tJariJari, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(212, Short.MAX_VALUE))
         );
 
         bHitung.setBackground(new java.awt.Color(51, 153, 255));
@@ -162,11 +104,11 @@ public class frameShofi1 extends javax.swing.JFrame {
         jPanel2.setBackground(new java.awt.Color(255, 255, 255));
         jPanel2.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Output", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 153, 255))); // NOI18N
 
-        hasilLuas.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        hasilLuas.setText("Luas :");
+        tLuas.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        tLuas.setText("Luas :");
 
-        hasilKeliling.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
-        hasilKeliling.setText("Keliling :");
+        tKeliling.setFont(new java.awt.Font("Segoe UI Black", 1, 14)); // NOI18N
+        tKeliling.setText("Keliling :");
 
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
@@ -174,20 +116,20 @@ public class frameShofi1 extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(hasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(hasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 472, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
-                .addComponent(hasilLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tLuas, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
-                .addComponent(hasilKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(tKeliling, javax.swing.GroupLayout.PREFERRED_SIZE, 16, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(39, Short.MAX_VALUE))
         );
 
@@ -256,7 +198,7 @@ public class frameShofi1 extends javax.swing.JFrame {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addComponent(jPanel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(0, 6, Short.MAX_VALUE))
+                .addGap(0, 11, Short.MAX_VALUE))
         );
 
         pack();
@@ -264,29 +206,24 @@ public class frameShofi1 extends javax.swing.JFrame {
 
     private void bResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bResetActionPerformed
         // TODO add your handling code here:
-        tAlas.setText("");
-        tTinggi.setText("");
-        tsisiA.setText("");
-        tsisiB.setText("");
-        tsisiC.setText("");
+        tJariJari.setText("");
+        tLuas.setText("Jari-jari :");
+        tKeliling.setText("Diameter :");
+        tLuas.setText("Luas :");
+        tKeliling.setText("Keliling :");
 
-        hasilLuas.setText("Luas :");
-        hasilKeliling.setText("Keliling :");
+        tLuas.setText("Luas :");
+        tKeliling.setText("Keliling :");
                             
     }//GEN-LAST:event_bResetActionPerformed
 
     private void bHitungActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_bHitungActionPerformed
         // TODO add your handling code here:
-
-        Segitiga_shofi sgt = new Segitiga_shofi();
-
-        sgt.setAlas(Double.parseDouble(tAlas.getText()));
-        sgt.setTinggi(Double.parseDouble(tTinggi.getText()));
-        sgt.setSisiA(Double.parseDouble(tsisiA.getText()));
-        sgt.setSisiA(Double.parseDouble(tsisiB.getText()));
-        sgt.setSisiA(Double.parseDouble(tsisiC.getText()));
-        hasilLuas.setText("Luas : " + sgt.getLuas());
-        hasilKeliling.setText("Keliling : " + sgt.getKeliling());
+        Lingkaran_Audi lkr = new Lingkaran_Audi();
+         double jari_jari = Double.parseDouble(tJariJari.getText());
+        Lingkaran_Audi lingkaran = new Lingkaran_Audi(jari_jari);
+        tLuas.setText(String.format("Luas : %.2f", lingkaran.getLuas()));
+        tKeliling.setText(String.format("Keliling : %.2f", lingkaran.getKeliling()));
     }//GEN-LAST:event_bHitungActionPerformed
 
     /**
@@ -311,31 +248,23 @@ public class frameShofi1 extends javax.swing.JFrame {
         //</editor-fold>
 
         /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new frameShofi1().setVisible(true));
+        java.awt.EventQueue.invokeLater(() -> new frameAudi1().setVisible(true));
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton bHitung;
     private javax.swing.JButton bReset;
-    private javax.swing.JLabel hasilKeliling;
-    private javax.swing.JLabel hasilLuas;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanel3;
-    private javax.swing.JTextField tAlas;
-    private javax.swing.JTextField tTinggi;
-    private javax.swing.JTextField tsisiA;
-    private javax.swing.JTextField tsisiB;
-    private javax.swing.JTextField tsisiC;
+    private javax.swing.JTextField tJariJari;
+    private javax.swing.JLabel tKeliling;
+    private javax.swing.JLabel tLuas;
     // End of variables declaration//GEN-END:variables
 }

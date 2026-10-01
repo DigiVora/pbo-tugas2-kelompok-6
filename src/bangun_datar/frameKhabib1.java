@@ -245,10 +245,12 @@ public class frameKhabib1 extends javax.swing.JFrame {
         
         persegiPanjang_Khabib pppanjang = new persegiPanjang_Khabib();
 
-        pppanjang.setLebar(Double.parseDouble(tPanjang.getText()));
+        pppanjang.setPanjang(Double.parseDouble(tPanjang.getText()));
         pppanjang.setLebar(Double.parseDouble(tLebar.getText()));
         
-     
+        pppanjang.hitungLuas();
+        pppanjang.hitungKeliling();
+        
         hasilLuas.setText("Luas : " + pppanjang.getLuas());
         hasilKeliling.setText("Keliling : " + pppanjang.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed

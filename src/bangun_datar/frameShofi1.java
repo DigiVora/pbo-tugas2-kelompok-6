@@ -66,7 +66,7 @@ public class frameShofi1 extends javax.swing.JFrame {
 
         jLabel10.setFont(new java.awt.Font("Berlin Sans FB", 2, 12)); // NOI18N
         jLabel10.setForeground(new java.awt.Color(0, 51, 204));
-        jLabel10.setText("Menghitung Luas dan Keliling dari bangun datar Segitiga");
+        jLabel10.setText("Menghitung Luas dan Keliling dari bangun datar Segitiga.");
 
         jPanel1.setBackground(new java.awt.Color(255, 255, 255));
         jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Input", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 0, 12), new java.awt.Color(0, 0, 255))); // NOI18N

@@ -143,7 +143,7 @@
             <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
               <Color blue="cc" green="33" red="0" type="rgb"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Menghitung Luas dan Keliling dari bangun datar Segitiga"/>
+            <Property name="text" type="java.lang.String" value="Menghitung Luas dan Keliling dari bangun datar Segitiga."/>
           </Properties>
         </Component>
         <Container class="javax.swing.JPanel" name="jPanel1">

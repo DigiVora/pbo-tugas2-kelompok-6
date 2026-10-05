@@ -83,7 +83,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel4">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/bangun_datar/img/beranda2.png"/>
+                      <Image iconType="3" name="/bangun_datar/image/beranda2.png"/>
                     </Property>
                   </Properties>
                 </Component>
@@ -283,7 +283,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/SEGITIGAA.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/SEGITIGAA.png"/>
                         </Property>
                         <Property name="horizontalTextPosition" type="int" value="0"/>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
@@ -344,7 +344,7 @@
                         </Property>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/PERSEGI.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/PERSEGI.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[150, 20]"/>
@@ -398,7 +398,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/PERSEGI PANJANG.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/PERSEGI PANJANG.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[150, 20]"/>
@@ -473,7 +473,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/LINGKARAN.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/LINGKARAN.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[150, 20]"/>
@@ -506,7 +506,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/JAJAR GENJANG.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/JAJAR GENJANG.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[150, 20]"/>
@@ -578,7 +578,7 @@
                       <Properties>
                         <Property name="horizontalAlignment" type="int" value="0"/>
                         <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                          <Image iconType="3" name="/bangun_datar/img/BELAH KETUPAT.png"/>
+                          <Image iconType="3" name="/bangun_datar/image/BELAH KETUPAT.png"/>
                         </Property>
                         <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
                           <Dimension value="[150, 20]"/>

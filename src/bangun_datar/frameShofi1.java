@@ -288,8 +288,8 @@ public class frameShofi1 extends javax.swing.JFrame {
         sgt.setAlas(Double.parseDouble(tAlas.getText()));
         sgt.setTinggi(Double.parseDouble(tTinggi.getText()));
         sgt.setSisiA(Double.parseDouble(tsisiA.getText()));
-        sgt.setSisiA(Double.parseDouble(tsisiB.getText()));
-        sgt.setSisiA(Double.parseDouble(tsisiC.getText()));
+        sgt.setSisiB(Double.parseDouble(tsisiB.getText()));
+        sgt.setSisiC(Double.parseDouble(tsisiC.getText()));
         hasilLuas.setText("Luas : " + sgt.getLuas());
         hasilKeliling.setText("Keliling : " + sgt.getKeliling());
     }//GEN-LAST:event_bHitungActionPerformed

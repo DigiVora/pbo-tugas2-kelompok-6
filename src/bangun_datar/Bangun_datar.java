@@ -4,6 +4,13 @@
  */
 package bangun_datar;
 
+import models.zakijajargenjang;
+import models.Lingkaran_Audi;
+import models.Persegi_Yakin;
+import models.persegiPanjang_Khabib;
+import models.Segitiga_shofi;
+import models.belahketupat_aditya;
+
 /**
  *
  * @author achmad_khusnul_yakin

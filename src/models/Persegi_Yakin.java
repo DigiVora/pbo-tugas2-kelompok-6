@@ -2,30 +2,36 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
-package bangun_datar;
+package models;
 
 /**
  *
- * @author ThinkPad
+ * @author achmad_khusnul_yakin
  */
-public class belahketupat_aditya {
-// 1. Atribut
+
+/**
+ * Class Persegi_Yakin
+ * Nama : Achmad Khusnul Yakin
+ * Nim : 202557201001
+ * Prodi : Sistem Informasi
+ * Semester : 3
+ * Tugas Kelompok 6 PBO - Bangun Datar
+ */
+public class Persegi_Yakin {
+    
+    // 1. Atribut
     private double sisi;
-    private double diagonal1;
-    private double diagonal2;
     private double luas;
     private double keliling;
 
     // 2. Satu Konstruktor (Konstruktor Kosong)
-    public belahketupat_aditya() {
+    public Persegi_Yakin() {
         this.sisi = 0;
-        this.diagonal1 = 0;
-        this.diagonal2 = 0;
         this.luas = 0;
         this.keliling = 0;
     }
 
-    // 3. Getter & Setter Atribut Input
+    // 3. Getter & Setter Sisi
     public double getSisi() {
         return sisi;
     }
@@ -34,29 +40,13 @@ public class belahketupat_aditya {
         this.sisi = sisi;
     }
 
-    public double getDiagonal1() {
-        return diagonal1;
-    }
-
-    public void setDiagonal1(double diagonal1) {
-        this.diagonal1 = diagonal1;
-    }
-
-    public double getDiagonal2() {
-        return diagonal2;
-    }
-
-    public void setDiagonal2(double diagonal2) {
-        this.diagonal2 = diagonal2;
-    }
-
     // 4. Method Perhitungan
     public void hitungLuas() {
-        luas = 0.5 * diagonal1 * diagonal2;
+        this.luas = this.sisi * this.sisi;
     }
 
     public void hitungKeliling() {
-        this.keliling = 4 * sisi;
+        this.keliling = 4 * this.sisi;
     }
 
     // 5. Getter Hasil Luas dan Keliling
@@ -68,4 +58,3 @@ public class belahketupat_aditya {
         return keliling;
     }
 }
-

@@ -10,10 +10,10 @@ package models;
  */
 public class persegiPanjang_Khabib {
     //membuat atribut
-    private double panjang;
-    private double lebar;
-    private double luas;
-    private double keliling;
+    public double panjang;
+    public double lebar;
+    public double luas;
+    public double keliling;
     
     
     //membuat konstruktor kosong

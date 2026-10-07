@@ -9,8 +9,8 @@ package models;
  * @author user
  */
 public class Lingkaran_Audi {
-    private double jari_jari;
-    private double phi = 3.14;
+    public double jari_jari;
+    public double phi = 3.14;
     
     public Lingkaran_Audi(){
         

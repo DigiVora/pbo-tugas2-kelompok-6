@@ -9,13 +9,13 @@ package models;
  * @author ACER
  */
 public class Segitiga_shofi {
-private  double alas;
-private  double tinggi;
-private  double sisiA;
-private  double sisiB;
-private  double sisiC;
-private  double luas;
-private  double keliling;
+public  double alas;
+public  double tinggi;
+public  double sisiA;
+public  double sisiB;
+public  double sisiC;
+public  double luas;
+public  double keliling;
 
     public Segitiga_shofi(){
         alas = 0.0;

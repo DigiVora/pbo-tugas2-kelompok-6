@@ -1,17 +1,19 @@
+package Views;
+
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Views;
 
 import models.User;
+import Views.frameDashboard;
 
 /**
  *
  * @author acer
  */
 public class Login extends javax.swing.JFrame {
-         private User user;
+         public static String username;
     private static final java.util.logging.Logger logger = java.util.logging.Logger.getLogger(Login.class.getName());
 
     /**
@@ -23,8 +25,6 @@ public class Login extends javax.swing.JFrame {
 
     public Login() {
         initComponents();
-
-        user = new User("admin", "12345");
     }
     /**
      * This method is called from within the constructor to initialize the form.
@@ -129,24 +129,12 @@ public class Login extends javax.swing.JFrame {
 
     private void btnloginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnloginActionPerformed
         // TODO add your handling code here:
-    String username = tuser.getText();
-    String password = tPassword.getText();
-
-    if (user.login(username, password)) {
-
-        frameDashboard dashboard = new frameDashboard();
-        dashboard.setLocationRelativeTo(null);
-        dashboard.setVisible(true);
-
-        this.dispose();
-
-    } else {
-
-        javax.swing.JOptionPane.showMessageDialog(
-                this,
-                "Username atau password salah!"
-        );
-    }
+    username = tuser.getText();
+    frameDashboard dashboard = new frameDashboard();
+    dashboard.setLocationRelativeTo(null); 
+    dashboard.setVisible(true); 
+    this.dispose();
+    
     }//GEN-LAST:event_btnloginActionPerformed
 
     private void tPasswordActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_tPasswordActionPerformed

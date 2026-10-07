@@ -20,6 +20,9 @@ public class frameDashboard extends javax.swing.JFrame {
     public frameDashboard() {
         initComponents();
         
+        //menambah code untuk menampilkan user
+        Username.setText("Halo, " + Login.username);
+        
         //menambahkan margin untuk card dengan panel
         panelCard.setBorder(
         javax.swing.BorderFactory.createEmptyBorder(10, 15, 10, 15)
@@ -70,6 +73,9 @@ public class frameDashboard extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         jPanel2 = new javax.swing.JPanel();
+        panelUser = new javax.swing.JPanel();
+        iconUser = new javax.swing.JLabel();
+        Username = new javax.swing.JLabel();
         panelIsi = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
         panelCard = new javax.swing.JPanel();
@@ -114,6 +120,7 @@ public class frameDashboard extends javax.swing.JFrame {
         panelHeader.add(panelLogo, java.awt.BorderLayout.LINE_START);
 
         panelJudul.setBackground(new java.awt.Color(209, 242, 255));
+        panelJudul.setPreferredSize(new java.awt.Dimension(600, 249));
         panelJudul.setLayout(new java.awt.BorderLayout());
 
         jPanel1.setBackground(new java.awt.Color(209, 242, 255));
@@ -134,7 +141,7 @@ public class frameDashboard extends javax.swing.JFrame {
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 850, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 54, Short.MAX_VALUE))
+                .addGap(0, 0, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -155,7 +162,7 @@ public class frameDashboard extends javax.swing.JFrame {
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 954, Short.MAX_VALUE)
+            .addGap(0, 974, Short.MAX_VALUE)
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -165,6 +172,18 @@ public class frameDashboard extends javax.swing.JFrame {
         panelJudul.add(jPanel2, java.awt.BorderLayout.PAGE_END);
 
         panelHeader.add(panelJudul, java.awt.BorderLayout.CENTER);
+
+        panelUser.setBackground(new java.awt.Color(209, 242, 255));
+        panelUser.setPreferredSize(new java.awt.Dimension(150, 170));
+        panelUser.setLayout(new java.awt.BorderLayout());
+
+        iconUser.setIcon(new javax.swing.ImageIcon(getClass().getResource("/bangun_datar/image/icons8-profile-48.png"))); // NOI18N
+        panelUser.add(iconUser, java.awt.BorderLayout.LINE_START);
+
+        Username.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        panelUser.add(Username, java.awt.BorderLayout.CENTER);
+
+        panelHeader.add(panelUser, java.awt.BorderLayout.LINE_END);
 
         panelUtama.add(panelHeader, java.awt.BorderLayout.PAGE_START);
 
@@ -341,7 +360,7 @@ public class frameDashboard extends javax.swing.JFrame {
         panelFooterLayout.setHorizontalGroup(
             panelFooterLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panelFooterLayout.createSequentialGroup()
-                .addContainerGap(1010, Short.MAX_VALUE)
+                .addContainerGap(1180, Short.MAX_VALUE)
                 .addComponent(jButton1)
                 .addGap(20, 20, 20))
         );
@@ -433,6 +452,8 @@ public class frameDashboard extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel Username;
+    private javax.swing.JLabel iconUser;
     private javax.swing.JButton jButton1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
@@ -464,6 +485,7 @@ public class frameDashboard extends javax.swing.JFrame {
     private javax.swing.JPanel panelPersegi;
     private javax.swing.JPanel panelPersegiPanjang;
     private javax.swing.JPanel panelSegitiga;
+    private javax.swing.JPanel panelUser;
     private javax.swing.JPanel panelUtama;
     // End of variables declaration//GEN-END:variables
 }
